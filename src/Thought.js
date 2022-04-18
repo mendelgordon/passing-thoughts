@@ -13,6 +13,7 @@ export const Thought = props => {
          const timeout = setTimeout(f => handleRemoveClick(), timeRemaining);
          return f => clearTimeout(timeout);
       },
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       [thought]
    );
 
